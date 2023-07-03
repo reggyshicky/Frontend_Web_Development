@@ -1,4 +1,4 @@
-/*c50 manual pages is the best*/
+g/*c50 manual pages is the best*/
 #include <stdio.h>
 
 int main(void)
