@@ -13,13 +13,13 @@ function myfunction() {
 
 myfunction();
 
-//format 2
+//format 2 Arro function
 const arrowFunction = () => {
     console.log("This is an arrow function");
 }
 arrowFunction();
 
-//format 3
+//format 3 Anonymous function
 const functionVariable = function() {
     console.log("Variable function");
 }
