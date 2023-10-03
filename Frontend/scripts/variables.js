@@ -24,3 +24,8 @@ const functionVariable = function() {
     console.log("Variable function");
 }
 functionVariable();
+
+const mystring = 'Javascript';
+newstring = mystring.replace('v', 'b');
+console.log(newstring);
+
