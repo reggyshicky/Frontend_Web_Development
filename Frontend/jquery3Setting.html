@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="divText"></div>
+    <div id="divHtml"></div>
+    <input type="text" id="txtTest" name="txtTest" value="Input field" />
+    
+    <script type="text/javascript">
+    $(function()
+    {
+        $("#divText").text("A dynamically set text");
+        $("#divHtml").html("<b><i>A dynamically set HTML string</i></b>");
+        $("#txtTest").val("A dynamically set value");
+    });
+    </script
+</body>
+</html>
