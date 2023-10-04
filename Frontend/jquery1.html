@@ -8,6 +8,17 @@
         <!--Include the jQuery Library-->
     </head>
     <body>
+        <ul>
+            <li class="bold">Test 1</li>
+            <li>Test 2</li>
+            <li class="bold">Test 3</li>
+        </ul>
+        <script type="text/javascript">
+            $(function()
+            {
+                $("li.bold").css("color", "red");
+            });
+            </script>
         <div id="divTest"></div>
         <script type="text/javascript">
             $(function() {
