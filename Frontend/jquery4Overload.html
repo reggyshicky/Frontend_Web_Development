@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    
+    <script type="text/javascript">
+    $(function()
+    {
+        $("p").text(function(index, oldText) {
+            return "Existing text: " + oldText + ". New text: A dynamically set text (#" + index + ")";
+        });
+    });
+    </script>
+</body>
+</html>
