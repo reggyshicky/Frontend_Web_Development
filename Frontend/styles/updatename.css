@@ -1,0 +1,33 @@
+button {
+    font-family: "helvetica neue", helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid rgb(200 200 0 / 0.6);
+    background-color: rgb(0 217 217 / 0.60);
+    color: rgb(100 0 0 / 1);
+    box-shadow: 1px 1px 2px rgb(0 0 200 / 0.4);
+    border-radius: 10px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+/*comments on the use of each property*/
+/*
+font-family: this sets the font family for the text inside the element to be displayed
+It specifies a list of font families to use in order of preference. If "Helvetica Neue" 
+is available, it will be used. If not, it will try to use "Helvetica," and if that's not available either, it will use a generic sans-serif font.
+letter-spacing: this line controls the spacing btn characters in the text, it adds 1 pixel of space btn each chacter in the text content
+text-transform: this line transforms the text content to be displayed in uppercase letters
+all the letters in the text will be capitalized
+text-align: center, this line sets the horizontal alignment of the tex within its container to be centered
+border: this line creates a border around the element, it is a solid border with a width of 2 pixels and a color specified in RGB  format 
+background-color: this line sets the background color of the element using an RGB color
+color: this line sets the text color
+This line creates a box shadow effect around the element. It consists of a shadow that is 1 pixel to the right, 1 pixel down, 
+with a blur radius of 2 pixels. The shadow color is specified in RGB format with a transparency of 40%.
+border-radius: 10px; This line rounds the corners of the element's border, giving it a border radius of 10 pixels. This creates a 
+slightly rounded appearance for the element.
+padding: 3px 10px; This line sets the padding inside the element. It specifies 3 pixels of padding on the top and bottom and 10 pixels of padding on the
+left and right sides. Padding creates space between the content and the element's border.
+cursor: pointer, this linr changes the mouse cursor when hovering over the element to a pointer cursor, indicating that element is interactive and can be clicked
+*/
