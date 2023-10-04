@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .bold {
+      font-weight: bold;
+    }
+
+    .blue {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+<a href="javascript:void(0);" onclick="ToggleClass(this);">Toggle class</a>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+function ToggleClass(sender)
+{
+  if($(sender).hasClass("bold"))
+    $(sender).removeClass("bold");
+  else
+    $(sender).addClass("bold");
+}
+</script>
+
+<a href="javascript:void(0);" onclick="$(this).toggleClass('bold');">Toggle class</a>
+<!--Here, (this) refers to the current DOM element that triggered the event. In the context of an 
+    event handler, such as an onclick attribute, this refers to the element that was clicked or 
+    interacted with.-->
+
+<div id="divTestArea1">
+  <span>Test 1</span><br />
+  <div>Test 2</div>
+  <b>Test 3</b><br />
+</div>
+
+<script type="text/javascript">
+$(function()
+{
+  $("#divTestArea1 span, #divTestArea1 b").addClass("blue");
+  $("#divTestArea1 div").addClass("bold blue");
+});
+</script>
+
+</body>
+</html>
+
+<!-- this function is designed to toggle the "bold" class on and off for a given DOM element (sender). 
+If the element already has the "bold" class, it removes it to make the text non-bold, and if 
+it doesn't have the class, it adds it to make the text bold. -->
