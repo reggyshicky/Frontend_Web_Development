@@ -7,6 +7,28 @@ function MaxMinInteger (ArrayOfNums) {
 }
 
 console.log(MaxMinInteger([5, 10, 1, 0, 90]))
+
+
+
+
+//Alternative when finding the min/smallest number
+function findSmallestNumber (arrayOfNumbers) {
+    let smallestNumber; //
+
+    for (i = 0; i < arrayOfNumbers.length; i++) {
+        const arrNum = arrayOfNumbers[i]; //store each at every alternative
+
+        if (i === 0) {
+            smallestNumber = arrNum;
+        }
+        if (arrNum < smallestNumber) {
+            smallestNumber = arrNum;
+        }
+    }
+    return smallestNumber;
+}
+console.log(findSmallestNumber([1, 8, 90, 100, 5]));
+
 //The destructuring assignment syntax is a JavaScript expression that makes it possible to 
 //extract data from arrays or objects into distinct variables.
 // const nums = [1, 2, 3]
