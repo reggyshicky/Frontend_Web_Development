@@ -1,8 +1,8 @@
 //Given an array of integers your solution should find the smallest integer.
 //Find the minimum and maximum integers in an array
-function MaxMinInteger (args) {
-    let max_int = Math.max(...args);
-    let min_int = Math.min(...args);
+function MaxMinInteger (ArrayOfNums) {
+    let max_int = Math.max(...ArrayOfNums);
+    let min_int = Math.min(...ArrayOfNums);
     return `${min_int} & ${max_int}`; 
 }
 
