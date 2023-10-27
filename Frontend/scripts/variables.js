@@ -39,3 +39,7 @@ console.log(result);
 // string should be split. This is the only required argument. The split() method splits the string into an 
 // array of substrings wherever the separator is found. If the separator is an empty string (""), the string is 
 // split into an array of individual characters.
+a = 1;
+b = 2;
+c = a + b;
+console.log(c);
