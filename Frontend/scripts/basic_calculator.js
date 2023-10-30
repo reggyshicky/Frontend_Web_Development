@@ -18,3 +18,11 @@ console.log(basicOp("+", 5, 10));
 console.log(basicOp("-", 10, 5));
 console.log(basicOp("*", 5, 10));
 console.log(basicOp("/", 10, 5));
+
+//alternative using eval()
+function basicOperation(operation, value1, value2) {
+    const operationString = value1 + operation + value2;
+    const result = eval(operationString);
+    return result
+}
+console.log(basicOperation("+", 10, 40));
